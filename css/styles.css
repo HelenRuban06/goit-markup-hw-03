@@ -4,6 +4,7 @@
     --color-two: #2E2F42;
     --color-portfolio:#434455;
     --color-three: #F4F4FD;
+    --color-button: #E7E9FC;
 }
 
 body {
@@ -50,7 +51,6 @@ img {
 .header-adress-navigation {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-title {
@@ -111,6 +111,7 @@ address{
     letter-spacing: 0.02em;
     color: var(--color-portfolio);
     font-style: normal;
+    padding: 24px 0;
   
 }
 
@@ -151,6 +152,9 @@ address{
 background-color: #FFFFFF;
 width: calc((100% - 72px) / 4);
 border-radius: 0px 0px 4px 4px;
+}
+.our-product {
+width: calc((100% - 48px) / 3);
 }
 
 .main-button {
@@ -307,9 +311,16 @@ padding: 100px 0;
 }
 
 /*-----------PORTFOLIO---------*/
-
+.section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .section-list {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .button-list {
@@ -322,16 +333,21 @@ padding: 100px 0;
     color: var(--color);
     background-color: var(--color-three);
     cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid var(--color-button);
+    border-radius: 4px;
 }
 
 .button-list:hover {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 
 .button-list:focus {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 .section-title {
     font-weight: 500;
@@ -346,4 +362,22 @@ padding: 100px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-portfolio);
+}
+
+.section-product {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.product-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.product-container {
+    padding: 32px 16px;
+    border: 1px solid var(--color-portfolio);
+    border-top: none;
+    margin-bottom: 8px;
 }
