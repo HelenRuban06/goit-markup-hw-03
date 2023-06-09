@@ -227,6 +227,7 @@ width: calc((100% - 48px) / 3);
     /* max-width: 1128px;
     width: 100%; */
     gap: 24px;
+    margin-bottom: 120px;
  
 }
 .main-text {
